@@ -1,4 +1,5 @@
 # Software-Engineering - Task Organizer📋
+---
 Ein Java-basiertes Software-Engineering-Projekt zur Entwicklung einer Desktop-Anwendung für die Aufgabenverwaltung.
 Das Projekt wird schrittweise im Rahmen mehrerer Übungen entwickelt. Jede Übung erweitert die bestehende Anwendung um neue Funktionen. Dabei liegt der Fokus auf einer klaren Softwarearchitektur, der Trennung von Verantwortlichkeiten und der Wiederverwendbarkeit des Codes.
 ---
