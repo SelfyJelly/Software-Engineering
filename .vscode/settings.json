@@ -7,5 +7,5 @@
     "java.project.referencedLibraries": [
         "lib/**/*.jar"
     ],
-    "java.debug.settings.onBuildFailureProceed": false
+    "java.debug.settings.onBuildFailureProceed": true
 }
