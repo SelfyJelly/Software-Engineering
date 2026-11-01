@@ -52,7 +52,8 @@ public class ORMLiteOrganizerRepository implements AutoCloseable {
 	public Optional<Task> readTask(int id) {
 		try {
 			TaskEntity entity = taskDao.queryForId(id);
-			if(entity == null) return Optional.empty();			
+			if (entity == null)
+				return Optional.empty();
 			Task element = taskMapper.toDomain(entity);
 			return Optional.of(element);
 		} catch (SQLException e) {
@@ -105,7 +106,7 @@ public class ORMLiteOrganizerRepository implements AutoCloseable {
 
 	public boolean delete(int id) {
 		try {
-			
+
 			int count = taskDao.deleteById(id);
 			if (count == 1) {
 				return true;
@@ -140,29 +141,29 @@ public class ORMLiteOrganizerRepository implements AutoCloseable {
 		}
 	}
 
-	// Übung 03 eingefügt 
+	// Übung 03 eingefügt
 	public List<Task> readTasks(Optional<UB_03_Sort> sortSettings, Optional<UB_03_Range> rangeSettings) {
-try {
-QueryBuilder<TaskEntity, Integer> qb = taskDao.queryBuilder();
-if(sortSettings.isEmpty() || sortSettings.get().order() == Order.UNORDERED)
-qb.orderBy(TaskEntity.ID, true);
-else {
-String column = columnMapper.toEntity(sortSettings.get().column());
-boolean ascending = sortSettings.get().order() == Order.ASCENDING;
-qb.orderBy(column, ascending);
-if(sortSettings.get().column() != Column.ID)
-qb.orderBy(TaskEntity.ID, true);
-}
-if(rangeSettings.isPresent()) {
-long offset = rangeSettings.get().offset();
-long limit = rangeSettings.get().limit();
-qb.offset(offset).limit(limit);
-}
-List<TaskEntity> entities = qb.query();
-List<Task> elements = taskMapper.toDomain(entities);
-return elements;
-} catch (SQLException e) {
-throw new IllegalStateException("Could not read tasks", e);
-}
-}
+		try {
+			QueryBuilder<TaskEntity, Integer> qb = taskDao.queryBuilder();
+			if (sortSettings.isEmpty() || sortSettings.get().order() == Order.UNORDERED)
+				qb.orderBy(TaskEntity.ID, true);
+			else {
+				String column = columnMapper.toEntity(sortSettings.get().column());
+				boolean ascending = sortSettings.get().order() == Order.ASCENDING;
+				qb.orderBy(column, ascending);
+				if (sortSettings.get().column() != Column.ID)
+					qb.orderBy(TaskEntity.ID, true);
+			}
+			if (rangeSettings.isPresent()) {
+				long offset = rangeSettings.get().offset();
+				long limit = rangeSettings.get().limit();
+				qb.offset(offset).limit(limit);
+			}
+			List<TaskEntity> entities = qb.query();
+			List<Task> elements = taskMapper.toDomain(entities);
+			return elements;
+		} catch (SQLException e) {
+			throw new IllegalStateException("Could not read tasks", e);
+		}
+	}
 }

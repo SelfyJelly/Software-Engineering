@@ -6,12 +6,12 @@ import java.util.List;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 
+import UB_03_view.java.UB_03_OrganizerView;
 import db.access.ORMLiteOrganizerRepository;
 import domain.functions.TaskFunctions;
 import domain.model.Task;
 import file.access.TaskReader;
 import usecases.OrganizerUseCases;
-import view.java.OrganizerView;
 
 public class UB_03_ViewApplication {
     private static void setSystemLookAndFeel() {
@@ -35,7 +35,7 @@ public class UB_03_ViewApplication {
         }
         TaskFunctions service = new TaskFunctions();
         OrganizerUseCases manager = new OrganizerUseCases(repository, service);
-        OrganizerView view = new OrganizerView(manager);
+        UB_03_OrganizerView view = new UB_03_OrganizerView(manager);
         EventQueue.invokeLater(() -> view.open());
     }
 }

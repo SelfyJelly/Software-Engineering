@@ -1,4 +1,4 @@
-package view.java;
+package UB_03_view.java;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -44,7 +44,7 @@ import domain.model.Task;
 import usecases.OrganizerUseCases;
 
 @SuppressWarnings("serial")
-public class OrganizerView extends JFrame {
+public class UB_03_OrganizerView extends JFrame {
 	
 	private static final int HEIGHT = 600, WIDTH = 900;
 	private static final int PAGE_SIZE = 30;
@@ -65,7 +65,7 @@ public class OrganizerView extends JFrame {
 	private Column currentSortSelection;
 	private boolean currentAscendingSelection;
 	
-	public OrganizerView(OrganizerUseCases manager) {
+	public UB_03_OrganizerView(OrganizerUseCases manager) {
 		super("Organizer");
 		this.setPreferredSize(new Dimension(WIDTH, HEIGHT));
 		
@@ -353,7 +353,7 @@ public class OrganizerView extends JFrame {
 
 	private void newDialog() {
 		taskList.clearSelection();
-		Task newTask = new OrganizerDialog().newTask(this);
+		Task newTask = new UB_03_OrganizerDialog().newTask(this);
 		if(newTask == null)
 			return;
 		
@@ -372,7 +372,7 @@ public class OrganizerView extends JFrame {
 		
 		Object oldValue = currentSortSelection.from(task);
 
-		Task editedTask = new OrganizerDialog().editTask(this, task);
+		Task editedTask = new UB_03_OrganizerDialog().editTask(this, task);
 		if(editedTask == null)
 			return;
 		

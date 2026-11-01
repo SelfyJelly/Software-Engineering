@@ -1,4 +1,4 @@
-package view.java;
+package UB_03_view.java;
 
 import static UB_03_query.valueobjects.UB_03_Sort.Column.*;
 
@@ -48,7 +48,7 @@ import domain.model.Priority;
 import domain.model.Task;
 
 
-public class OrganizerDialog {
+public class UB_03_OrganizerDialog {
 	
 	@FunctionalInterface
 	public static interface Procedure {
@@ -491,7 +491,7 @@ public class OrganizerDialog {
 					| UnsupportedLookAndFeelException e) {
 				e.printStackTrace();
 			}
-			System.out.println(new OrganizerDialog().newTask(null));
+			System.out.println(new UB_03_OrganizerDialog().newTask(null));
 		});
 
 	}
