@@ -3,15 +3,15 @@ In unserem Software-Engineering-Projekt entwickeln wir schrittweise eine Java-An
 
 Das Projekt baut auf mehreren Übungen auf. 
 
-###Übung 01:
+###Übung 01
 
 Zunächst wird die grundlegende Aufgabenlogik implementiert. 
 
-###Übung 02: 
+###Übung 02
 
 Anschließend wird eine SQLite-Datenbank integriert, um Aufgaben dauerhaft zu speichern. 
 
-###Übung 03: 
+###Übung 03
 
 Im nächsten Schritt wird eine grafische Benutzeroberfläche (GUI) entwickelt.
 
