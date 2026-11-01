@@ -3,7 +3,6 @@
 Ein Java-basiertes Software-Engineering-Projekt zur Entwicklung einer Desktop-Anwendung für die Aufgabenverwaltung.
 Das Projekt wird schrittweise im Rahmen mehrerer Übungen entwickelt. Jede Übung erweitert die bestehende Anwendung um neue Funktionen. Dabei liegt der Fokus auf einer klaren Softwarearchitektur, der Trennung von Verantwortlichkeiten und der Wiederverwendbarkeit des Codes.
 
----
 
 ## Projektübersicht
 Der Task Organizer soll Benutzern ermöglichen, ihre Aufgaben effizient zu organisieren und zu verwalten.
@@ -15,7 +14,7 @@ Der Task Organizer soll Benutzern ermöglichen, ihre Aufgaben effizient zu organ
 - Geschätzten Arbeitsaufwand berechnen
 - Aufgaben dauerhaft in einer SQLite-Datenbank speichern
 - Aufgaben über eine grafische Benutzeroberfläche verwalten
----
+
 ## Übungen
 ### Übung 01
 Zunächst wird die grundlegende Aufgabenlogik implementiert. 
@@ -38,7 +37,7 @@ Im nächsten Schritt wird eine grafische Benutzeroberfläche (GUI) entwickelt.
 - Benutzerinteraktion über eine GUI
 - Erstellung und Bearbeitung von Aufgaben über die Oberfläche
 - Anbindung der GUI an die bestehende Geschäftslogik
----
+
 ## Verwendete Technologien
 - Java
 - SQLite
@@ -46,7 +45,7 @@ Im nächsten Schritt wird eine grafische Benutzeroberfläche (GUI) entwickelt.
 - ORMLite
 - Git & Github
 - VS Code / Eclips
----
+
 ## Projektziel
 Das Endergebnis soll eine funktionsfähige Desktop-Anwendung sein, mit der Benutzer Aufgaben erstellen, anzeigen, bearbeiten und löschen können. Zusätzlich sollen Aufgaben nach Priorität und Fälligkeitsdatum gefiltert sowie der geschätzte Arbeitsaufwand berechnet werden.
 
