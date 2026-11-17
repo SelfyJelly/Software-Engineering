@@ -1,4 +1,4 @@
-package de.stuttgart.hft.organizer.layer2.query.valueobjects;
+package de.stuttgart.hft.organizer.layer2.ports.valueobjects;
 
 import java.util.Optional;
 

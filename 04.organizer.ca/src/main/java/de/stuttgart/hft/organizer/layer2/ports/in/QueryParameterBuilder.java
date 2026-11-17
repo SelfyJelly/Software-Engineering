@@ -2,7 +2,7 @@ package de.stuttgart.hft.organizer.layer2.ports.in;
 
 import java.util.List;
 
-import de.stuttgart.hft.organizer.layer2.query.valueobjects.UB_03_Sort.Column;
+import de.stuttgart.hft.organizer.layer2.ports.valueobjects.UB_03_Sort.Column;
 
 public interface QueryParameterBuilder {
 

@@ -1,6 +1,6 @@
 package de.stuttgart.hft.organizer.layer4.db.mapper;
 
-import de.stuttgart.hft.organizer.layer2.query.valueobjects.UB_03_Sort.Column;
+import de.stuttgart.hft.organizer.layer2.ports.valueobjects.UB_03_Sort.Column;
 import de.stuttgart.hft.organizer.layer4.db.entities.TaskEntity;
 import de.stuttgart.hft.organizer.layer4.mapping.framework.EntityMapper;
 

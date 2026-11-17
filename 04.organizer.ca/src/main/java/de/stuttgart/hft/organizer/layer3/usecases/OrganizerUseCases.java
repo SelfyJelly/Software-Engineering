@@ -4,8 +4,8 @@ import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
 
-import de.stuttgart.hft.organizer.layer2.query.valueobjects.UB_03_Range;
-import de.stuttgart.hft.organizer.layer2.query.valueobjects.UB_03_Sort;
+import de.stuttgart.hft.organizer.layer2.ports.valueobjects.UB_03_Range;
+import de.stuttgart.hft.organizer.layer2.ports.valueobjects.UB_03_Sort;
 import de.stuttgart.hft.organizer.layer1.domain.model.Priority;
 import de.stuttgart.hft.organizer.layer1.domain.model.Task;
 import de.stuttgart.hft.organizer.layer3.ports.in.OrganizerManager;

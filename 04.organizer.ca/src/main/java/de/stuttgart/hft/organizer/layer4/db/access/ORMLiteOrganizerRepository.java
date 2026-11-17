@@ -9,10 +9,10 @@ import com.j256.ormlite.dao.DaoManager;
 import com.j256.ormlite.jdbc.JdbcConnectionSource;
 import com.j256.ormlite.stmt.QueryBuilder;
 
-import de.stuttgart.hft.organizer.layer2.query.valueobjects.UB_03_Range;
-import de.stuttgart.hft.organizer.layer2.query.valueobjects.UB_03_Sort;
-import de.stuttgart.hft.organizer.layer2.query.valueobjects.UB_03_Sort.Column;
-import de.stuttgart.hft.organizer.layer2.query.valueobjects.UB_03_Sort.Order;
+import de.stuttgart.hft.organizer.layer2.ports.valueobjects.UB_03_Range;
+import de.stuttgart.hft.organizer.layer2.ports.valueobjects.UB_03_Sort;
+import de.stuttgart.hft.organizer.layer2.ports.valueobjects.UB_03_Sort.Column;
+import de.stuttgart.hft.organizer.layer2.ports.valueobjects.UB_03_Sort.Order;
 import de.stuttgart.hft.organizer.layer4.db.entities.TaskEntity;
 import de.stuttgart.hft.organizer.layer4.db.mapper.TaskMapper;
 import de.stuttgart.hft.organizer.layer4.db.mapper.UB_03_ColumnMapper;

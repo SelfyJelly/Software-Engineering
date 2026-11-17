@@ -1,6 +1,6 @@
 package de.stuttgart.hft.organizer.layer4.view.java;
 
-import static de.stuttgart.hft.organizer.layer2.query.valueobjects.UB_03_Sort.Column.*;
+import static de.stuttgart.hft.organizer.layer2.ports.valueobjects.UB_03_Sort.Column.*;
 
 import java.awt.Color;
 import java.awt.Component;
@@ -43,7 +43,7 @@ import javax.swing.text.JTextComponent;
 import org.jdatepicker.JDatePicker;
 import org.jdatepicker.UtilDateModel;
 
-import de.stuttgart.hft.organizer.layer2.query.valueobjects.UB_03_Sort.Column;
+import de.stuttgart.hft.organizer.layer2.ports.valueobjects.UB_03_Sort.Column;
 import de.stuttgart.hft.organizer.layer1.domain.model.Priority;
 import de.stuttgart.hft.organizer.layer1.domain.model.Task;
 
